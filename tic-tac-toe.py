@@ -6,7 +6,7 @@ def checked(i) :
 
       if button["text"] != "     " :
             return
-      button["text"] = player 
+      button["text"] = player
       button["bg"] = "yellow"
 
       if player == "X" :
@@ -22,9 +22,7 @@ list= []
 
 for i in range(9) :
       b = Button(window, text="     ", command=lambda k=i: checked(k))
-      b.grid(row=i//3, column=i%3)
+      b.grid(row=i/3, column=i%3)
       list.append(b)
 
 window.mainloop()
-
-
